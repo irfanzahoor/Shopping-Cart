@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- cart -->
+    <button id="cart-btn">
+      <i class="fa-brands fa-opencart fa-xl"></i>
+    </button>
+    <!-- cart sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+      <!-- header -->
+      <div class="cart-header-padding">
+        <div class="cart-header">
+          <p>
+            <span class="title">Cart</span>
+            <span class="items"
+              >(<span id="total-quantity"></span>
+              <span id="total-quantity-text"></span>)</span
+            >
+          </p>
+          <button id="close-btn">
+            <i class="fa-solid fa-xmark fa-xl"></i>
+          </button>
+        </div>
+      </div>
+      <!-- products -->
+      <div id="cart-products" class="cart-products"></div>
+      <!-- footer -->
+      <div class="cart-footer">
+        <div class="total">
+          <p>total</p>
+          <p>$<span id="total-price"></span></p>
+        </div>
+        <a href="#" class="checkout-link">checkout</a>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="main.js"></script>
+  </body>
+</html>

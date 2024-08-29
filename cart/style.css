@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  padding: 16px 24px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* sidebar */
+.cart-sidebar {
+  height: 100%;
+  width: 420px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.4s;
+}
+
+.cart-sidebar.show {
+  left: 0;
+}
+
+/* header */
+.cart-header-padding {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.items {
+  font-size: 10px;
+}
+
+/* products */
+.cart-products {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 0 30px 10px;
+}
+
+.product {
+  margin-bottom: 10px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+}
+
+.details {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.product-img {
+  width: 100px;
+}
+
+.product-info {
+  margin-left: 20px;
+}
+
+.product-name {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.product-price {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* controls */
+.controls {
+  border-top: 1px solid #e8e8e8;
+  display: flex;
+}
+
+.quantity,
+.trash-btn {
+  width: 50%;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.quantity-num {
+  font-size: 12px;
+}
+
+.trash-btn {
+  border-left: 1px solid #e8e8e8;
+}
+
+.trash-btn:hover {
+  background-color: #f63a35;
+  color: white;
+}
+
+/* footer */
+.cart-footer {
+  padding: 0 30px 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.total {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.checkout-link {
+  font-size: 12px;
+  font-weight: 700;
+  background-color: black;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  padding: 13px 5px;
+}
